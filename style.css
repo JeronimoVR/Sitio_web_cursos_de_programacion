@@ -3,12 +3,13 @@ NAVBAR
 */
 
 :root {
-    --color-primario: #41B4F0;
+    --color-primario: hwb(201 25% 6%);
     --color-secundario: #EEF5FF;
     --color-terciario: #B4D4FF;
     --color-cuaternario: #86B6F6;
     --color-quintario: #176B87;
     --white:#fff;
+    --fondo-texto-imagenes:rgba(0, 0, 0, 0.7);
 }
 
 
@@ -60,6 +61,39 @@ nav a:hover {
 
 /* IMAGEN */
 
-.imagen{
-    width: auto;
+.imagen-top-lenguajes{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    display: inline-block;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.imagen-top-lenguajes img{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-imagen {
+    position: absolute;
+    top: 45%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white; 
+}
+
+.titulo-imagen h2 {
+    font-size: 42px; 
+    margin: 0;
+    padding: 10px 20px;
+    background-color:var(--fondo-texto-imagenes); 
+}
+
+.titulo-imagen p {
+    font-size: 24px;
+    margin: 0;
+    padding: 5px 20px;
+    background-color:var(--fondo-texto-imagenes); 
 }
