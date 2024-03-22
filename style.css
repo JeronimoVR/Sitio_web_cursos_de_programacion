@@ -68,7 +68,7 @@ nav a:hover {
 
 .imagen-top-lenguajes {
     width: 100%;
-    height: 400px;
+    height: 74vh;
     position: relative;
     display: inline-block;
     object-fit: cover;
@@ -218,14 +218,14 @@ body {
 }
 
 .titulo-asesoria {
-   margin-bottom: 40px;
-   font-size: 60px;
-   font-weight: 600;
-   text-transform: uppercase;
-   font-family: var(--subtitulo);
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--subtitulo);
 }
 
-.contenido_asesoria p{
+.contenido_asesoria p {
     margin-bottom: 40px;
     font-size: 18px;
     font-family: var(--texto);
@@ -239,75 +239,32 @@ body {
     align-items: center;
 }
 
-.box-container{
+.box-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
 }
 
-.box-container .box{
+.box-container .box {
     height: 16rem;
     width: 20rem;
-    background:#86B6F6;
+    background: #86b6f6;
     border-radius: 1rem;
     margin: 2rem;
     font-family: var(--subtitulo);
 }
 
-.box-container .box i{
+.box-container .box i {
     height: 3rem;
     width: 3rem;
     line-height: 3rem;
     text-align: center;
     border-radius: 50%;
-    color: #86B6F6;
+    color: #86b6f6;
     background: #fff;
     margin: 0.4rem 0;
     font-size: 2rem;
-
-}
-/*FOOTER*/
-
-footer {
-    background-color: var(--color-quintario);
-    color: white;
-    padding: 20px 0;
-}
-
-.contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-footer svg {
-    width: 75px;
-    fill-opacity: 0.95;
-    fill-rule: "evenodd";
-    margin-left: 20px;
-}
-
-.enlaces a {
-    font-family: var(--texto);
-    color: var(--white);
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-.enlaces a:hover {
-    color: var(--color-primario);
-}
-
-.redes-sociales a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-.redes-sociales a:hover {
-    color: #55acee;
 }
 
 /*---PLANES---*/
@@ -384,11 +341,7 @@ footer {
 }
 
 .premium-anual button:hover {
-    background-color: rgb(
-        235,
-        21,
-        68
-    ); /* Color de fondo azul más oscuro al pasar el mouse */
+    background-color: rgb(235,21,68); 
 }
 
 .premium-semestral {
@@ -428,11 +381,7 @@ footer {
 }
 
 .premium-mensual button:hover {
-    background-color: rgb(
-        89,
-        21,
-        216
-    ); /* Color de fondo azul más oscuro al pasar el mouse */
+    background-color: rgb(89,21,216); 
 }
 
 .planes-cards h3 {
@@ -448,8 +397,8 @@ footer {
 
 .section-otro-plan {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 54px;
+    margin-bottom: 64px;
 }
 
 .section-otro-plan h2 {
@@ -480,7 +429,7 @@ footer {
 }
 
 .plan-empresarial {
-    border-top: 5px solid rgb(117, 111, 2);
+    border-top: 5px solid rgb(255, 175, 51);
 }
 
 .plan-gratuito {
@@ -549,4 +498,46 @@ footer {
 .plan-estudiantes .otro-plan-boton:hover {
     background-color: rgb(236, 47, 195);
     color: #fff;
+}
+
+/*FOOTER*/
+footer {
+    background-color: var(--color-quintario);
+    color: white;
+    padding: 20px 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer svg {
+    width: 75px;
+    fill-opacity: 0.95;
+    fill-rule: "evenodd";
+    margin-left: 20px;
+}
+
+.enlaces a {
+    font-family: var(--texto);
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.enlaces a:hover {
+    color: var(--color-primario);
+}
+
+.redes-sociales a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.redes-sociales a:hover {
+    color: #55acee;
 }
