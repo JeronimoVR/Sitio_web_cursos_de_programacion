@@ -1,16 +1,24 @@
-/*
-NAVBAR
-*/
 
 :root {
-    --color-primario: #41B4F0;
+    --color-primario: hwb(201 25% 6%);
     --color-secundario: #EEF5FF;
     --color-terciario: #B4D4FF;
     --color-cuaternario: #86B6F6;
     --color-quintario: #176B87;
     --white:#fff;
+    --fondo-texto-imagenes:rgba(0, 0, 0, 0.7);
+    --titulo:"Tilt Prism", sans-serif;
+    --subtitulo:"Madimi One", sans-serif;
+    --texto:"Didact Gothic", sans-serif;
 }
 
+*{
+    margin: 0;
+}
+
+/*
+NAVBAR
+*/
 
 .barra-tareas {
     width: auto;
@@ -30,7 +38,7 @@ NAVBAR
 .logo svg {
     width: 50px; 
     height: 50px; 
-    margin-right: 15px;
+   
 }
 
 .logo a {
@@ -42,7 +50,7 @@ NAVBAR
     margin: 2px;
     display: inline-block;
     font-size: 38px; 
-    font-family: "Tilt Prism", sans-serif;
+    font-family: var(--titulo);
 }
 
 nav a {
@@ -60,6 +68,248 @@ nav a:hover {
 
 /* IMAGEN */
 
-.imagen{
-    width: auto;
+.imagen-top-lenguajes{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+    object-fit: cover;
+    vertical-align: middle;
 }
+
+.imagen-top-lenguajes img{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-imagen {
+    position: absolute;
+    top: 45%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white; 
+}
+
+.titulo-imagen h2 {
+    font-size: 42px; 
+    font-family: var(--texto);
+    margin: 0;
+    padding: 10px 20px;
+    background-color:var(--fondo-texto-imagenes); 
+}
+
+.titulo-imagen p {
+    font-size: 24px;
+    font-family: var(--texto);
+    margin: 0;
+    padding: 5px 20px;
+    background-color:var(--fondo-texto-imagenes); 
+}
+
+/* SECCION PRINCIPAL */
+
+main {
+    padding: 20px;
+}
+
+main .items-section{
+    padding: 20px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-content: baseline;
+}
+
+.encabezado {
+    width: 85%;
+    height: 35px;
+    text-align: center;
+    justify-self: center;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-quintario);
+}
+
+.encabezado h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: var(--subtitulo);
+}
+
+.items-section{
+    display: flex-box;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 5px;
+}
+
+.items-section .item{
+    width: 25%;
+    margin: auto;
+}
+
+.items-section div .svg-icon{
+    color:var(--color-terciario); 
+    font-size: inherit;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+
+.items-section div h2{
+    font-family: var(--subtitulo);
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
+}
+
+.items-section div p{
+    font-family: var(--texto);
+    text-align: center;
+}
+
+.cta {
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: var(--texto);
+}
+
+.cta p {
+    font-size: 18px;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: var(--texto);
+}
+
+.boton-cta {
+    width: 180px;
+    height: 35px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--texto);
+    font-size: large;
+}
+
+.boton-cta:hover {
+    background-color: var(--color-cuaternario);
+}
+
+/*APARTADO DE ASESORIA*/
+
+body {
+    text-align: center;
+}
+
+.titulo-asesoria {
+   margin-bottom: 40px;
+   font-size: 60px;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-family: var(--subtitulo);
+}
+
+.contenido_asesoria p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-family: var(--texto);
+}
+
+.contenido_asesoria {
+    height: 69vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box{
+    height: 16rem;
+    width: 20rem;
+    background:#86B6F6;
+    border-radius: 1rem;
+    margin: 2rem;
+    font-family: var(--subtitulo);
+}
+
+.box-container .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #86B6F6;
+    background: #fff;
+    margin: 0.4rem 0;
+    font-size: 2rem;
+
+}
+/*FOOTER*/
+
+footer {
+    background-color: var(--color-quintario);
+    color: white;
+    padding: 20px 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer svg {
+    width: 75px;
+    fill-opacity: .95;
+    fill-rule:"evenodd";
+    margin-left: 20px;
+}
+
+.enlaces a {
+    font-family: var(--texto);
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.enlaces a:hover {
+    color: var(--color-primario); 
+}
+
+.redes-sociales a {
+
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.redes-sociales a:hover {
+    color: #55acee; 
+}
+
