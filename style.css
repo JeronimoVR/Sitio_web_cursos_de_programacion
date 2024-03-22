@@ -474,7 +474,7 @@ body {
 }
 
 .plan-empresarial .otro-plan-boton {
-    color: rgb(117, 111, 2);
+    color: rgb(255, 175, 51);
 }
 
 .plan-estudiantes .otro-plan-boton {
@@ -491,7 +491,7 @@ body {
 }
 
 .plan-empresarial .otro-plan-boton:hover {
-    background-color: rgb(117, 111, 2);
+    background-color: rgb(255, 164, 27);
     color: #fff;
 }
 
