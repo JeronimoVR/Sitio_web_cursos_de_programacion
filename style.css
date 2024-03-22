@@ -213,6 +213,62 @@ main .items-section{
     background-color: var(--color-cuaternario);
 }
 
+/*APARTADO DE ASESORIA*/
+
+body {
+    text-align: center;
+}
+
+.titulo-asesoria {
+   margin-bottom: 40px;
+   font-size: 60px;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-family: var(--subtitulo);
+}
+
+.contenido_asesoria p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-family: var(--texto);
+}
+
+.contenido_asesoria {
+    height: 69vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box{
+    height: 16rem;
+    width: 20rem;
+    background:#86B6F6;
+    border-radius: 1rem;
+    margin: 2rem;
+    font-family: var(--subtitulo);
+}
+
+.box-container .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #86B6F6;
+    background: #fff;
+    margin: 0.4rem 0;
+    font-size: 2rem;
+
+}
 /*FOOTER*/
 
 footer {
