@@ -218,16 +218,17 @@ body {
 }
 
 .titulo-asesoria {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /*Cambio 40 -> 20*/
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
     font-family: var(--subtitulo);
+    margin: 2rem;
 }
 
 .contenido_asesoria p {
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 17px;
     font-family: var(--texto);
 }
 
@@ -246,25 +247,26 @@ body {
     text-align: center;
 }
 
-.box-container .box {
-    height: 16rem;
+.box-container .box{
+    height: 17rem;
     width: 20rem;
     background: #86b6f6;
     border-radius: 1rem;
     margin: 2rem;
     font-family: var(--subtitulo);
+    padding: 0.2em;
 }
 
-.box-container .box i {
-    height: 3rem;
-    width: 3rem;
+.box-container .box svg{
+    height: 4.5rem;
+    width: 4.8rem;
     line-height: 3rem;
     text-align: center;
     border-radius: 50%;
     color: #86b6f6;
     background: #fff;
     margin: 0.4rem 0;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /*---PLANES---*/
