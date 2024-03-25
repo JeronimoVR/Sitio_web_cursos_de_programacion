@@ -64,7 +64,7 @@ nav a:hover {
     color: var(--color-quintario);
 }
 
-/* IMAGEN */
+/*IMAGEN*/
 
 .imagen-top-lenguajes {
     width: 100%;
@@ -213,12 +213,13 @@ main .items-section {
 
 /*APARTADO DE ASESORIA*/
 
-body {
+.main-asesorias {
     text-align: center;
+    margin-top: auto;
 }
 
 .titulo-asesoria {
-    margin-bottom: 40px; /*Cambio 40 -> 20*/
+    margin-bottom: 40px;
     font-size: 60px;
     font-weight: 600;
     text-transform: uppercase;
@@ -233,7 +234,8 @@ body {
 }
 
 .contenido_asesoria {
-    height: 69vh;
+    margin-top: auto;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,7 +245,6 @@ body {
 .box-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -322,10 +323,12 @@ body {
 }
 
 /*APARTADO DE CONTACTO*/
+.main-contacto{
+margin-top: 100px;
+}
 
 .contenido-contacto {
-    
-    padding: 0 1.5em;
+    padding: 0 24px;
     margin-top: 50px;
 }
 
@@ -734,5 +737,212 @@ footer {
 }
 
 .redes-sociales a:hover {
-    color: #55acee;
+    color: #55acee; 
 }
+
+/*CURSOS*/
+
+.curso img {
+    border-radius: 6px; /* Redondear los bordes de la imagen */
+    max-width: 60%; /* Ajustar la imagen al ancho del contenedor */
+    height: auto; /* Mantener la proporción de aspecto de la imagen */
+}
+
+.Def {
+    background-color: #dde7f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.curso p{
+    font-size: 13px;
+    font-family: var(--texto);
+    margin: 0;
+    padding: 5px 20px;
+}
+
+.curso h3{
+    font-family: var(--texto);
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.Def h2 {
+    margin: 10px;
+    padding: 10px;
+    font-family: var(--subtitulo);
+    font-size: 50px;
+}
+
+.Def p {
+    margin: 10px;
+    padding: 10px;
+    font-family: var(--texto);
+}
+
+.curso {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.info-curso {
+    text-align: center;
+}
+
+.boton {
+    display: block;
+    background-color: #55acee;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    color: #000000;
+    background-color: #176B87;
+    box-shadow: 0 0 20px #000000;
+    border-color: #000;
+}
+
+/*CURSO 1*/
+
+.container h2 {
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+
+body {
+    font-family: var(--texto);
+    margin: 0;
+    padding: 0;
+}
+
+body h1 {
+    font-family: var(--subtitulo);
+  
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    border: #176B87;
+    border-radius: 10px;
+}
+
+.content-box1 {
+    background-color: #dde7f0;
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 2px;
+    border-radius: 10px;
+    border-color: #000;
+}
+
+.row {
+    border: 1px solid #a6c2d3;
+    padding: 10px;
+    border-radius: 13px;
+    text-align: justify;
+}
+
+.row p{
+    text-align: center;
+}
+.line {
+    border-bottom: 1px solid #ccc;
+}
+
+.content-box {
+    background-color: #dde7f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.content-box p{
+font-size: 20px;
+padding-bottom: 10px;
+background-color: var(--color-quintario);
+color:#f2f2f2;
+}
+
+.row1 {
+    border: 1px solid #a6c2d3;
+    padding: 10px;
+    border-radius: 13px;
+    text-align: justify;
+    margin-bottom: -1px;
+}
+
+.instructor-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh; /* Centra en el centro de la pantalla */
+}
+
+.Video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32vh; /* Centra en el centro de la pantalla */
+}
+
+.instructor-info {
+    display: flex;
+    align-items: center;
+}
+
+.instructor-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instructor-info {
+    padding: 20px;
+}
+
+.instructor-image img {
+    width: 130px; /* Ajusta el tamaño de la imagen según sea necesario */
+    border-radius: 10%;
+}
+
+.instructor-image p {
+    font-size: 16px; 
+    font-family: var(--texto);/* Ajusta el tamaño de la fuente del nombre según sea necesario */
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+
+
